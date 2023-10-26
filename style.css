@@ -1,0 +1,153 @@
+body {
+    background-color: rgb(255, 206, 250);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20em;
+
+}
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10rem;
+}
+
+
+section#grid-layout{
+    display: flex;
+    height:100vh;
+    align-items: center;
+}
+
+.container{
+    width:80%;
+    height: 30%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+
+}
+
+.item-3{
+    background-color: rgb(255, 175, 175);
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
+
+.item-1{
+    background-color: rgb(189, 255, 183);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  
+}
+
+
+.item-2{
+    background-color:rgb(189, 255, 183);
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-row-start: 1;
+    grid-column-end: 4;
+}
+
+.item-4{
+    background-color: rgb(255, 214, 138);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.item-5{
+    background-color:  rgb(255, 175, 175);
+}
+
+.item-6{
+    background-color:rgb(189, 255, 183);
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.item-7{
+    background-color: rgb(255, 175, 175);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.item-8{
+    background-color:  rgb(255, 214, 138);
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+
+
+section#grid-layout-area{
+   
+    display: flex;
+    justify-content: center;
+    height:50vh;
+    align-items: center;
+}
+.container-area {
+    width: 60vw;
+    column-gap: 10px;
+    row-gap: 10px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "area-1 area-1 area-1 area-1 area-1"
+      "area-2 area-3 area-3 area-3 area-4"
+      "area-2 area-3 area-3 area-3 area-4"
+      "area-2 area-3 area-3 area-3 area-4"
+      "area-2 area-3 area-3 area-3 area-4"
+      "area-5 area-5 area-5 area-5 area-4";
+  }
+
+.area-1{
+    text-align: center;
+    background-color: gray;
+    grid-area: area-1;
+    border-radius: 1rem;
+}
+.area-2{
+    text-align: center;
+    background-color: darkgray;
+    grid-area: area-2;
+    border-radius: 1rem;
+}
+.area-3{
+    text-align: center;
+    background-color: rgb(59, 59, 59);
+    grid-area: area-3;
+    border-radius: 1rem;
+}
+.area-4{
+    text-align: center;
+    background-color: darkgray;
+    grid-area: area-4;
+    border-radius: 1rem;
+}
+.area-5{
+    text-align: center;
+    background-color: gray;
+    grid-area: area-5;
+    border-radius: 1rem;
+}
+
+  
+
